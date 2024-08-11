@@ -1,0 +1,140 @@
+html {
+  --s: 50px;
+  --c: #191b22;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    
+    text-align: center;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+
+  .me {
+    border-radius: 125px;
+    border: 2px solid black;
+    height: 225px;
+  }
+
+  h1 {
+    font-weight: bolder; 
+    font-size: 3rem;
+  }
+
+  .name {
+    margin-top: 0px;
+  }
+
+  .aboutme {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+
+  .intro {
+    margin-top: 50px;
+  }
+
+  a {
+    color: white;
+  }
+
+  hr {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 700px) {
+    .aboutme {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .me {
+        .me {
+            height: 150px;
+        }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .languages {
+        flex-direction: column;
+    }
+  }
+
+  .secondh {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .languages {
+   display: flex;
+   justify-content: space-evenly;
+   gap: 30px;
+   margin-top: 90px;
+  }
+
+  #redbg {
+    background-color: #c91010;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    margin-bottom: 35px;
+  }
+
+  .ylwbg {
+    background-color: #F4CE14;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+  }
+
+  .blubg {
+    background-color: #1936b8;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+  }
+
+  .thirdh {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .titleh {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .title.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  .img2 {
+    border: 2px solid white;
+  }
+
+  @media(max-width: 650px) {
+    .title.container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
